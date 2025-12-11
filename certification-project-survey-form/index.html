@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">STI College Caloocan Survey Form</h1>
+    <p id="description">
+      This is a survey form created for my certification project in
+      freeCodeCamp.org
+    </p>
+    <form action="POST" id="survey-form">
+      <fieldset>
+        <legend>Survey</legend>
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John Doe"
+          required
+        />
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="john.doe@example.com"
+          required
+        />
+        <label for="number" id="number-label">Contact Number</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="1"
+          max="11"
+          placeholder="09123456789"
+          required
+        />
+
+        <p>How would you rate your stay at STI College Caloocan?</p>
+        <label for="dropdown">Select an option:</label>
+        <select name="dropdown" id="dropdown">
+          <option value="poor">Poor</option>
+          <option value="excellent">Excellent</option>
+        </select>
+        <p>Would you recommend STI College Caloocan to others?</p>
+        <input type="radio" name="yes-option" id="option" value="yes" />
+        <label for="yes-option">Yes</label>
+        <input type="radio" name="yes-option" id="option" value="no" />
+        <label for="no-option">No</label>
+        <p>Where did you find STI College Caloocan?</p>
+        <input
+          type="checkbox"
+          name="social-media"
+          id="option"
+          value="soc-med"
+        />
+        <label for="social-media">Social Media</label>
+        <input type="checkbox" name="friend" id="option" value="friend" />
+        <label for="friend">Friend</label>
+        <input
+          type="checkbox"
+          name="advertisement"
+          id="option"
+          value="advertisement"
+        />
+        <label for="advertisement">Advertisement</label>
+        <p>Any additional comments?</p>
+        <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
