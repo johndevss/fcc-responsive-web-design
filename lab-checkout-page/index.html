@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+  </head>
+
+  <body>
+    <h1>Checkout</h1>
+    <section>
+      <h2>Your Cart</h2>
+      <img
+        src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg"
+        alt="A picture of a rubiks cube"
+      />
+    </section>
+    <section>
+      <h2>Payment Information</h2>
+      <form action="" method="POST">
+        <label for="card-name">Name<span aria-hidden="true">*</span></label>
+        <input type="text" id="card-name" name="card-name" required />
+        <label for="card-number"
+          >Card Number<span aria-hidden="true">*</span></label
+        >
+        <input
+          type="text"
+          id="card-number"
+          name="card-number"
+          aria-describedby="card-number-help"
+          required
+        />
+        <p id="card-number-help">Card number should be 16 digits long.</p>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
